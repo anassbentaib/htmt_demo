@@ -62,7 +62,7 @@ a {
 }
 
 .pd-y{
-padding: 120px 0px;
+padding: 60px 0px;
 }
 
 .section-header{
@@ -131,6 +131,10 @@ body {
   visibility: hidden;
   transition: opicity 0.5s 
 
+}
+
+.dropdown-menu {
+  list-style: none;
 }
 
 .dropdown-menu a {
