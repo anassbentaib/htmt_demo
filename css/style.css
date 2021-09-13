@@ -1,0 +1,302 @@
+/* common */
+    /* 
+      -container
+      -opacity hover
+      -section header
+      -section padding
+      -hover effect 1 ( left to right)
+      -hover effect 2 ( top to bottom)
+    */
+
+    /* common styles*/
+.over{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(0,0, 0, 0.7);
+}
+
+.hover-opacity{
+  transition: opacity 0.5s;
+}
+  
+.hover-opacity:hover{
+   opacity: 0.8;
+}
+
+.ltr-effect{
+  position: relative;
+}
+
+.ltr-effect:after{
+position: absolute;
+content: "";
+width: 0;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #333;
+transition: width 0.5s ;
+z-index: -1;
+}
+
+.ltr-effect:hover:after{
+  width: 100%;
+
+}
+
+
+/*general CSS style */
+
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;/* css3 */
+}
+
+a {
+  text-decoration: none;
+}
+
+.pd-y{
+padding: 120px 0px;
+}
+
+.section-header{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.section-header .section-titel{
+ font-size: 35px;
+ text-transform: capitalize;
+ margin-bottom: 10px; 
+
+}
+
+.section-header .line{
+display: block;
+height: 5px;
+background-color:#6195ff ;
+width: 60px;
+margin:0px auto 70px auto;
+}
+
+.container {
+  width: 80%;
+  margin: auto; 
+}
+ 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserratsans,sans-serif;
+}
+
+body {
+      font-family: 'Varela Round', sans-serif;
+}
+
+.clear{
+  clear: both;
+}
+
+/* header */
+
+.clear{
+  clear: both;
+}
+
+.header {
+      position: fixed;
+      z-index: 10;
+      width: 100%;
+}
+
+.dropdown{
+  position: relative;
+}
+
+.dropdown-menu{
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  left: -50%;
+  top: 70%;
+  background: #6195ff;
+  opacity: 0;
+  visibility: hidden;
+  transition: opicity 0.5s 
+
+}
+
+.dropdown-menu a {
+  color: white;
+  display: block;
+  padding: 10px;
+}
+
+  .dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .nav {
+width: 60%;
+  margin: auto;
+  float: left;
+  list-style: none;
+  text-align: right;
+}
+
+.header .nav > li{
+  display: inline-block;
+  text-align: right;
+}
+
+.header .nav > li> a {
+  color: white;
+  padding: 15px;
+  font-size: 15;
+  display: block;
+}
+
+.header .nav >li >a:after,
+.header .nav >li >a:hover:after{
+  height: 3px;
+  display: block;
+  content: "";
+  background-color: aquamarine;
+  transition: 0.3s;
+}
+
+.header .nav >li > a.active:after{
+  width: 100%;
+}
+
+.header .nav >li > a:after {
+  width: 0%;
+}
+
+.header .nav> li> a:hover:after{
+  width: 100%;
+}
+
+.Header .logo {
+       width: 40%;
+       margin: auto;
+      float: left;
+      
+}
+
+.header .logo img {
+  width: 20%;
+  margin-top: 15px;
+}
+ 
+/*home section*/
+
+.home{
+  height: 100vh;
+  background-image:url(../photos/background1.webp) ;
+  background-size: cover;
+  position: relative;
+}
+
+.home-content{
+ top: 50%;
+ left: 50%;
+ position: absolute;
+transform: translate(-50%,-50%);
+text-align: center;
+width: 65%;
+ 
+}
+
+ .home .titel{
+   color: white;
+   width: 3,5rem;
+  text-transform: uppercase;
+}
+
+ .home .btn{
+   width: 150px;
+   padding: 10px 0px;
+   border-radius: 5px;
+   border: 0;
+   cursor: pointer;
+   font-size: 18px;
+}
+
+.home .btn-start{
+  background-color: white;
+  margin-right: 10px;
+}
+
+.home .btn-learn{
+  background-color: #6195ff;
+  color: white;
+}
+
+.home .home-descr{
+  margin: 20px 0px;
+ color: #fff;
+ line-height: 1,5;
+ letter-spacing: 2px;
+
+}
+
+/*About section*/
+
+.about-contant{
+  overflow: hidden;
+}
+
+.about-item{
+width: 30%;
+float: left;
+text-align: center;
+border: 1px solid #e8e8e8;
+padding: 50px 15px;
+}
+
+.about-item:hover .about-item-titel{
+  color: #fff;
+}
+
+
+.about-item.mg{
+margin: 0 5%;
+}
+
+.about-item .icon {
+  color: #6195ff;
+  margin-bottom: 10px;
+}
+
+.about-item-titel{
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.about-item-desc{
+line-height: 1.6;
+margin-bottom: 10px;
+color: #99999999;
+}
+
+.about-item-link{
+  color: #6195ff;
+  text-transform: capitalize;
+}
+
+/*Portfolio section*/
+
+/*services section*/
+/*Prices section*/
+/*team section*/
+/*blog section*/
+/*contact section*/
